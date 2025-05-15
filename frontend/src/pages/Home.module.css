@@ -1,0 +1,26 @@
+.card {
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .cardImg {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .cardBody {
+    padding: 1rem;
+  }
+  
+  .cardTitle {
+    font-weight: bold;
+  }
+  
+  .cardText {
+    color: #555;
+  }
+  

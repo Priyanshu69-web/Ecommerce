@@ -1,0 +1,60 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background: linear-gradient(135deg, #051622, #1F4E79); */
+    width: 100%;
+    height: 100%;
+    transition: background 0.5s ease-in-out;
+    color: black !important ;
+
+}
+* Underline Effect on Hover */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #5db9ee;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    color: white;
+}
+.bg-image {
+    background: linear-gradient(135deg, #082032, #1B3C73);
+    width: 100%;
+    height: 100%;
+    transition: background 0.2s linear;
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: #5db9ee;
+    /* Change text color on hover */
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    /* Default size */
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.brand-name span {
+    color: #5db9ee;
+    /* Highlighted first letter */
+    font-size: 2rem;
+}
+
+/* Hover Effect */
+.brand-name:hover {
+    text-shadow: 0 0 10px rgba(93, 185, 238, 0.8);
+    transform: scale(1.05);
+}
